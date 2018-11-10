@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>VueJS Template Syntax</title>
+    </head>
+    <body>
+        <!-- All VueJS templates are valid HTML and will pass parsers -->
+        <!-- VueJS uses Virtual DOM, this helps to minimise the number 
+             of components to re-render on state changes -->
+
+        <div id="text-interpolation">
+            <span>Message: {{ msg }}</span>
+
+            <!-- You can perform one time templating, that doesn't update on state change -->
+            <!-- Achieved with using the v-once directive -->
+            <span v-once>This will never change: {{msg}}</span>
+        </div>
+
+        <div id="raw-html">
+            <!-- Double mustaches are interpreted as plain text -->
+            <p>Using mustaches: {{rawHtml}}</p>
+            <!-- The v-html directive outputs as html -->
+            <p>Using v-html: <span v-html="rawHtml"></span></p>
+        </div>
+
+        <div id="javascript-expressions">
+            <!-- Data bindings allow us to use JavaScript expressions -->
+            {{ number + 1 }}
+            {{ ok ? 'yes' : 'no' }}
+            {{ message.split('').reverse().join('') }}
+            <div v-bind:id="'list-' + id'"></div>
+            <!-- Note only single expressions are allowed -->
+            <!-- Expressions are sandboxed and can only access a whitelist of globals -->
+            <!-- Shouldn't be used to access user defined globals -->
+        </div>
+
+        <div id="directiveNotes">
+            <!--
+
+                Directives are attributes on elements that start with the "v-" prefix
+                Most of these are single javascript expressions
+
+                Some can take arguments, denoted by a colon, e.g:
+                <a v-bind:href="url">...</a>
+
+                Some can take modifiers, denoted by a dot, e.g:
+                <form v-on:submit.prevent="onSubmit">...</form>
+
+                Finally there are 2 shorthands for common Vue attributes:
+                
+                <a v-bind:href="url"></a>
+                to
+                <a :href="url"></a>
+
+                 -- and --
+
+                <a v-on:click="doSomething"></a>
+                to
+                <a @click="doSomething"></a>
+            -->
+        </div>
+    </body>
+</html>
