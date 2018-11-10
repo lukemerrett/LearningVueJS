@@ -6,8 +6,8 @@ Output from a set of tutorials on VueJS
 
 ### VueJS Essentials Guide
 
-* [x] [Getting Started](https://vuejs.org/v2/guide/index.html)
-* [ ] [The Vue Instance](https://vuejs.org/v2/guide/instance.html)
+* [X] [Getting Started](https://vuejs.org/v2/guide/index.html)
+* [X] [The Vue Instance](https://vuejs.org/v2/guide/instance.html)
 * [ ] [Template Syntax](https://vuejs.org/v2/guide/syntax.html)
 * [ ] [Computed Properties and Watchers](https://vuejs.org/v2/guide/computed.html)
 * [ ] [Class and Style Bindings](https://vuejs.org/v2/guide/class-and-style.html)
