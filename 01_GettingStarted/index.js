@@ -13,6 +13,11 @@ window.onload = function() {
                 { text: "Buy flour" },
                 { text: "Make pancakes!" }
             ]
+        },
+        methods: {
+            reverseMessage: function() {
+                this.welcome_message = this.welcome_message.split('').reverse().join('')
+            }
         }
     })
 }
