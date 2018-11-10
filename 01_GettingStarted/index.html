@@ -38,6 +38,20 @@
                 <!-- Demonstrates 2 way data binding, changing this affects the other directives -->
                 <input v-model="welcome_message">
             </div>
+
+            <!-- Vue component, defined in the JS -->
+            <hello-message v-bind:name="name"></hello-message>
+
+            <div>
+                <ol>
+                    <!-- More complete Vue component example -->
+                    <shopping-item
+                        v-for="item in shopping_list"
+                        v-bind:item="item"
+                        v-bind:key="item.id">
+                    </shopping-item>
+                </ol>
+            </div>
         </div>
     </body>
 </html>
