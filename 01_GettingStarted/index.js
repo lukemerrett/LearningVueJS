@@ -6,7 +6,13 @@ window.onload = function() {
         data: {
             welcome_message: 'Hello Vue',
             hover_msg: 'You loaded this page on ' + new Date().toLocaleString(),
-            seen: true
+            seen: true,
+            todos: [
+                { text: "Buy milk" },
+                { text: "Buy eggs" },
+                { text: "Buy flour" },
+                { text: "Make pancakes!" }
+            ]
         }
     })
 }

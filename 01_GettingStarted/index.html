@@ -19,6 +19,15 @@
                 <!-- Conditional render, won't show if 'seen' attribute is falsey -->
                 <span v-if="seen">Now you see me</span>
             </div>
+
+            <div>
+                <ol>
+                    <!-- Iterates over a collection -->
+                    <li v-for="todo in todos">
+                        {{ todo.text }}
+                    </li>
+                </ol>
+            </div>
         </div>
     </body>
 </html>
