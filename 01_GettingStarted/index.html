@@ -33,6 +33,11 @@
                 <!-- v-on attaches event listeners invoking methods -->
                 <button v-on:click="reverseMessage">Reverse Message</button>
             </div>
+
+            <div>
+                <!-- Demonstrates 2 way data binding, changing this affects the other directives -->
+                <input v-model="welcome_message">
+            </div>
         </div>
     </body>
 </html>
