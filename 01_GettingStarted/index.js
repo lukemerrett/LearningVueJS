@@ -1,5 +1,7 @@
+let components = {};
+
 window.onload = function() {
-    var app = new Vue({
+    components.app = new Vue({
         el: '#app',
         data: {
             message: 'Hello Vue!'
