@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>VueJS: Getting Started</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div id="classBindings">
+                <!-- Directive that adds the "active" class to the element if "isActive" is truthy -->
+                <!-- It will also not overrwrite existing classes in the normal attribute -->
+                <div class="static"
+                v-bind:class="{ active: isActive, 'text-danger': hasError }"></div>
+
+                <!-- Doesn't have to be inline either, can point to a standard JS object in the data obj -->
+                <!-- And the directive can use computed properties -->
+                <div v-bind:class="classes"></div>
+
+                <!-- Also supports arrays, will render strings in whichever data properties are in the list -->
+                <div v-bind:class="[activeClass, errorClass]"></div>
+            </div>
+            <div id="styleBindings">
+                <!-- Same logic as the class directive, accepts an expression, object or array -->
+                <!-- Keys can be camelCase or kebab-case -->
+                <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
+
+                <!-- Can bind to an object as with the class directive -->
+                <div v-bind:style="styles"></div>
+            </div>
+        </div>
+    </body>
+</html>
