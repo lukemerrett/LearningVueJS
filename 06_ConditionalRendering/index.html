@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>VueJS: Getting Started</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- Conditional rendering directives, pointing at a data property -->
+            <!-- v-else-if and v-else must immediately follow the v-if block to be counted -->
+            <h1 v-if="ok">Yes</h1>
+            <h1 v-else-if="backup">Maybe</h1>
+            <h1 v-else>No</h1>
+
+            <!-- The template element can be used to show/hide a set of elements -->
+            <!-- The template element itself isn't rendered, it's an invisible wrapper -->
+            <template v-if="ok">
+                <h1>Title</h1>
+                <p>Paragraph</p>
+            </template>
+
+            <!-- Similar to v-if, but instead of not rendering the element, it just hides in using css -->
+            <h1 v-show="ok">Yes</h1>
+        </div>
+    </body>
+</html>

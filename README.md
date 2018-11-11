@@ -11,7 +11,7 @@ Output from a set of tutorials on VueJS
 * [X] [Template Syntax](https://vuejs.org/v2/guide/syntax.html)
 * [X] [Computed Properties and Watchers](https://vuejs.org/v2/guide/computed.html)
 * [X] [Class and Style Bindings](https://vuejs.org/v2/guide/class-and-style.html)
-* [ ] [Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
+* [X] [Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
 * [ ] [List Rendering](https://vuejs.org/v2/guide/list.html)
 * [ ] [Event Handling](https://vuejs.org/v2/guide/events.html)
 * [ ] [Form Input Bindings](https://vuejs.org/v2/guide/forms.html)
